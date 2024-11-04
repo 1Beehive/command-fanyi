@@ -98,12 +98,6 @@ func main() {
 		return
 	}
 
-	isTranslate := false
-	if args[len(args)-1] == "fanyi" {
-		isTranslate = true
-		args = args[:len(args)-1] // 去掉最后的 fanyi 参数
-	}
-
 	command := strings.Join(args, " ") // 组合成完整命令
 
 	output, err := getCommandOutput(command)
@@ -113,29 +107,17 @@ func main() {
 	}
 
 	lines := strings.Split(output, "\n")
-	if isTranslate {
-		for _, line := range lines {
-			if strings.TrimSpace(line) != "" {
-				// 打印英文，添加颜色
-				printWithColor(line)
-				//fmt.Printf("%s%s%s\n", ColorGreen, line, ColorReset)
-
-				// 保留前导空格
-				leadingSpaces := strings.Repeat(" ", len(line)-len(strings.TrimLeft(line, " ")))
-
-				// 翻译并打印中文
-				translated, err := translate(line)
-				if err != nil {
-					fmt.Println("翻译错误:", err)
-					continue
-				}
-				// 打印中文并与英文对齐
-				fmt.Printf("%s%s%s%s\n", leadingSpaces, ColorRed, translated, ColorReset)
-				fmt.Println("")
+	for _, line := range lines {
+		if strings.TrimSpace(line) != "" {
+			printWithColor(line)
+			leadingSpaces := strings.Repeat(" ", len(line)-len(strings.TrimLeft(line, " ")))
+			translated, err := translate(line)
+			if err != nil {
+				fmt.Println("翻译错误:", err)
+				continue
 			}
+			fmt.Printf("%s%s%s%s\n", leadingSpaces, ColorRed, translated, ColorReset)
+			fmt.Println("")
 		}
-	} else {
-		// 如果没有 fanyi 参数，按原样输出
-		printWithColor(output)
 	}
 }

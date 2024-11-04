@@ -3,6 +3,8 @@
 #### <p align="center"><a href="https://github.com/jeffcail/command-fanyi/releases"><img src="https://img.shields.io/github/release/command-fanyi/releases.svg" alt="GitHub release"></a><a href="https://github.com/jeffcail/command-fanyi/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"></a><p>
 #### <p align="center"><a href="./README.md" target="_blank">简体中文</a> | <a href="./README_en.md" target="_blank">English</a> </p>
 
+<img src="./images/img.png">
+
 ## 翻译采用的百度翻译，你可以自行修改为其他翻译
 > 设置百度翻译的appid 和 app secret
 > 
@@ -15,10 +17,9 @@
 brew install fanyi
 ```
 
-## 使用
+## 示例
 ```shell
 go mod -h fanyi
+tldr git push fanyi
+tldr curl fanyi
 ```
-
-## 效果图
-<img src="./images/img.png">
