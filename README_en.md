@@ -12,14 +12,13 @@
 >
 > export APPSECRET="**********"
 
-## Install
 ```shell
-brew install fanyi
+curl -sSL https://github.com/jeffcail/command-fanyi/blob/master/install.sh | bash
 ```
 
 ## Example
 ```shell
-go mod -h fanyi
-tldr git push fanyi
-tldr curl fanyi
+fanyi go mod -h 
+fanyi tldr git push
+fanyi tldr curl
 ```
