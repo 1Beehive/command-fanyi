@@ -10,7 +10,7 @@
 >
 > export APPID="**********"
 >
-> export APPSECRET="**********"
+> export SECRETKEY="**********"
 
 ```shell
 curl -sSL https://raw.githubusercontent.com/jeffcail/command-fanyi/refs/heads/master/install.sh | bash
