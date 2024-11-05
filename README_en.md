@@ -13,7 +13,7 @@
 > export APPSECRET="**********"
 
 ```shell
-curl -sSL https://github.com/jeffcail/command-fanyi/blob/master/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/jeffcail/command-fanyi/refs/heads/master/install.sh | bash
 ```
 
 ## Example
