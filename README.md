@@ -10,7 +10,7 @@
 > 
 > export APPID="**********"
 > 
-> export APPSECRET="**********"
+> export SECRETKEY="**********"
 
 ## 安装 
 1. Mac

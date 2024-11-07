@@ -10,7 +10,7 @@
 >
 > export APPID="**********"
 >
-> export APPSECRET="**********"
+> export SECRETKEY="**********"
 
 ## Install
 1. Mac
