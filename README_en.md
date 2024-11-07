@@ -12,9 +12,13 @@
 >
 > export APPSECRET="**********"
 
+## Install
+1. Mac
 ```shell
 curl -sSL https://raw.githubusercontent.com/jeffcail/command-fanyi/refs/heads/master/install.sh | bash
 ```
+2. Windows
+Download link： https://github.com/jeffcail/command-fanyi/releases/download/v1.0.2/command-fanyi-amd64-windows.exe
 
 ## Example
 ```shell

@@ -12,10 +12,14 @@
 > 
 > export APPSECRET="**********"
 
-## 安装
+## 安装 
+1. Mac
 ```shell
 curl -sSL https://raw.githubusercontent.com/jeffcail/command-fanyi/refs/heads/master/install.sh | bash
 ```
+2. Windows
+下载地址： https://github.com/jeffcail/command-fanyi/releases/download/v1.0.2/command-fanyi-amd64-windows.exe
+自行配置系统变量
 
 ## 示例
 ```shell
