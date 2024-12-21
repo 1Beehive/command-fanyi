@@ -1,4 +1,3 @@
-module command_fanyi
+module github.com/mazezen/command-fanyi
 
-go 1.22.0
-
+go 1.23rc2

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BINARIES_URL="https://github.com/jeffcail/command-fanyi/releases/download/v1.0.2/command-fanyi-darwin-arm64"
+BINARIES_URL="https://github.com/mazezen/command-fanyi/releases/download/v1.0.2/command-fanyi-darwin-arm64"
 
 INSTALL_DIR="$HOME/command-fanyi"
 TARGET_DIR="/usr/local/bin"
